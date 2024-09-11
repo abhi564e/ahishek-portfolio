@@ -1,0 +1,406 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #111011;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Section */
+#menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 36px;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-top: -20px;
+}
+
+.nav h1 {
+    margin: 0;
+    font-size: 36px; /* Adjust as needed */
+}
+
+#sidemenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidemenu li {
+    margin: 0 10px; /* Adjust spacing as needed */
+}
+
+#sidemenu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header {
+    background:  #615e5f;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+.profile {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+.profile img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ .profile img:hover{
+    background: linear-gradient(to left, #e8e8e9, #104444);  /* Gradient background on hover */
+    border-radius: 50%;  /* Make the background circular */
+    padding: 5px;  /* Add some padding */
+    transform: scale(1.1);  /* Slightly enlarge the icon */
+    transition: all 0.3s ease;  /* Smooth transition */
+ }
+.social-icons img {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    
+}
+.social-icons img:hover {
+    background: linear-gradient(to left, #6e45e1, #89d4cf);  /* Gradient background on hover */
+    border-radius: 50%;  /* Make the background circular */
+    padding: 5px;  /* Add some padding */
+    transform: scale(1.1);  /* Slightly enlarge the icon */
+    transition: all 0.3s ease;  /* Smooth transition */
+}
+.profile button {
+   border-radius: 200px;
+   height: 30px;
+   width: 100px;
+   text-decoration: none;
+   border: none;
+}
+
+
+.profile button a {
+    text-decoration: none;
+ }
+ 
+
+.profile button:hover{
+    background: linear-gradient(to left, #da6420, #c1ebeb);
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.stat-box h3 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 16px;
+}
+
+/* Services Section */
+.services {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box {
+    background-color: #f5dada;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+.service-box:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+}
+.service-box h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service-box p {
+    margin-top: 10px;
+}
+
+/* Experience, Education, and Hobbies Section */
+.experience-education {
+    padding: 60px 0;
+    background-color: #f8f6f6;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Add spacing between the cards */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+.experience:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+}
+.education:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+}
+.experience-education-hobbies {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px; /* Spacing between the experience, education, and hobbies */
+    flex-wrap: wrap; /* Makes it responsive on smaller screens */
+}
+
+/* Card-like styling */
+.experience-education-hobbies .experience,
+.experience-education-hobbies .education,
+.experience-education-hobbies .hobbies {
+    background-color: #f5cbcb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(179, 9, 9, 0.1);
+    flex: 1;
+    
+    min-width: 250px; /* Ensures the cards don't get too small on small screens */
+}
+
+/* Adjust width for education and experience */
+.experience,
+.education {
+    width: 30%; /* Control width to maintain equal card size */
+}
+
+/* Hobbies card */
+.hobbies {
+    width: 20%;
+}
+.hobbies:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease-out; 
+}
+
+/* Remove default list styling */
+.experience ul,
+.education ul,
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item spacing */
+.experience ul li,
+.education ul li,
+.hobbies ul li {
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 0;
+    background-color: #fcf9f9;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-box {
+    text-align: center;
+    background-color: #f5dada;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+}
+.skill-box:hover{
+    transform: scale(1.1); 
+    transition: all 0.3s ease-out; 
+}
+.skill-box img {
+    width: 100px;
+    height: auto;
+}
+
+.skill-box p {
+    margin-top: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    width: 30%;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item h4 {
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+     background-color: #2b2626;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+/* Resetting layout for mobile screens */
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+    #sidemenu {
+        background-color: #6f7272;
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: -40px;
+        position: absolute;
+
+    }
+    #sidemenu.active{
+        display: flex;
+    }
+    #sidemenu li {
+        margin: 10px 0; 
+    }
+   
+    .social-icons a img{
+        width: 40px;
+        height: 40px;
+          
+    }
+    
+    /* Profile Section */
+    .profile {
+        width: 100%; /* Profile takes full width */
+    }
+
+    .profile img {
+        height: 100px;
+        width: 100px; /* Smaller image size on mobile */
+    }
+
+    /* Services Section */
+    .services-list {
+        flex-direction: column; /* Stack service boxes vertically */
+        align-items: center;
+        margin-bottom: -90px;
+    }
+   
+    .service-box {
+        width: 90%; /* Full width for services on mobile */
+        margin: 30px 20px; /* Add space between service boxes */
+    }
+
+    /* Experience, Education, and Hobbies Section */
+    .experience-education-hobbies {
+        flex-direction: column; /* Stack the experience, education, and hobbies vertically */
+        align-items: center;
+    }
+
+    .experience,
+    .education,
+    .hobbies {
+        width: 90%; /* Make each card take full width */
+        margin-bottom: -40px;/* Add spacing between the cards */
+    }
+
+    /* Skills Section */
+    .skills-list {
+        flex-direction: column; /* Stack the skill boxes vertically */
+        align-items: center;
+        margin-bottom: -90px;
+    }
+
+    .skill-box {
+        width: 90%; /* Full width for skill boxes on mobile */
+        margin-bottom: 20px; /* Add space between skill boxes */
+    }
+
+    /* Portfolio Section */
+    .portfolio-items {
+        flex-direction: column; /* Stack portfolio items vertically */
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 100%; /* Full width for portfolio items on mobile */
+        margin-bottom: 20px; /* Add space between portfolio items */
+    }
+
+    /* Call to Action Section */
+    .cta {
+        padding: 40px 0; /* Reduce padding for mobile */
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb359d75f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Portfolio</h1>
+                <nav>
+                    <i id="menu-icon" class="fa-solid fa-caret-down"></i>
+                    <ul id="sidemenu">
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Project">Project</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+            <div class="profile">
+                <img src="images/background.png" alt="Profile Picture">
+                <h1>Abhishek Jha</h1>
+                <h2>Web Developer </h2>
+                <p> A passionate front-end developer with a strong focus on creating responsive and visually engaging websites. With expertise in HTML, CSS, and JavaScript, I strive to build user-friendly interfaces that provide seamless experiences across all devices.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt=""></a>
+                    <a href="#"><img src="images/github.png" alt=""></a>
+                    <a href="#"><img src="images/instagram.png" alt=""></a>
+                    <a href="#"><img src="images/linkedin.png" alt=""></a>
+                    <a href="#"><img src="images/twitter.png" alt=""></a>
+                </div>
+                <button ><a target="_blank" download="CV" href="images/RESUME-1.png">Download CV</a></button>
+                
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section   class="services">
+        <div class="container">
+            <h2 id="Services">My Quality Services</h2>
+            <div class="services-list">
+                <div class="service-box">
+                    <h3>Frontend</h3>
+                    <p>As a skilled Front-End Developer, I specialize in transforming design concepts into functional, responsive, and visually appealing websites.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Backend</h3>
+                    <p>I focus on building robust, scalable, and secure server-side applications. I have experience working with server-side technologies like Node.js, Express, and databases such as MongoDB and MySQL to create efficient back-end systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience and Education Section -->
+    <section  class="experience-education">
+        <div class="container">
+            <h2 id="About">About Me</h2>
+            <div class="experience-education-hobbies">
+              <div class="experience">
+                <h2>My Experience</h2>
+                <ul>
+                    <li>2024-present: Full Stack dev at Eqaim</li>
+                </ul>
+              </div>
+              <div class="education">
+                <h2>My Education</h2>
+                <ul>
+                    <li>2022-2025(pursing): Bachelor's in Computer Science at University MDU</li>
+                    <li>2021-2022 : 12th pessed from CBSE</li>
+                    <li>2019-2020 : 10th pessed from CBSE</li>
+                </ul>
+               </div>
+               <div class="hobbies">
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Volleyball</li>
+                    <li>Gaming</li>
+                    <li>Reading</li>
+                </ul>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 id="Skills">My Skills</h2>
+            <div class="skills-list">
+                <div class="skill-box">
+                    <img src="images/html.png" alt="Html">
+                    <p>Html</p>
+                </div>
+                <div class="skill-box">
+                    <img src="images/css-3.png" alt="Css">
+                    <p>Css</p>
+                </div>
+                <div class="skill-box">
+                    <img src="images/js.png" alt="Javascript">
+                    <p>Javascript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2 id="Project">My Recent Works</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="images/ecommerce.png" alt="Project 1">
+                    <h4> E-Commerce Website</h4>
+                    <span>Developed a responsive and visually appealing e-commerce website to facilitate the online sale of bags. Utilized modern front-end technologies (HTML, CSS, JavaScript) to ensure a user-friendly experience across all devices. </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 id="Contact">Contact me</h2>
+            <p>Contact me for projects, or just to say hi!</p>
+            <p>Email: jhaa94699@gmail.com | Phone: 9540777709</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const sidemenu = document.getElementById('sidemenu');
+        
+            menuIcon.addEventListener('click', function(event) {
+                // Prevent the click from propagating to the document
+                event.stopPropagation();
+                sidemenu.classList.toggle('active');
+            });
+        
+            document.addEventListener('click', function(event) {
+                // Check if the click was outside the sidemenu
+                if (sidemenu.classList.contains('active') && !sidemenu.contains(event.target) && !menuIcon.contains(event.target)) {
+                    sidemenu.classList.remove('active');
+                }
+            });
+        });
+        
+        </script>
+         
+</body>
+
+</html>
